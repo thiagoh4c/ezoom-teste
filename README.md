@@ -18,6 +18,8 @@ $ make install
 ``` bash
 $ make database
 ```
+***No prompt de senha pressionar ENTER (sem senha)***
+
 ### Duas opções para executar o projeto
 **Inicia o docker para versão web e executa o "ionic serve" com ionic-lab**
 ``` bash

@@ -18,12 +18,11 @@ pull:
 	@echo "Complete"
 
 database:
+	docker-compose stop
 	docker-compose up -d
 	docker exec -it thiago_mysql service mysql start
-	docker exec -it thiago_mysql mysql -u root -p123456  -e "CREATE USER 'ezoom'@'%' IDENTIFIED BY '123456';"
-	docker exec -it thiago_mysql mysql -u root -p123456  -e "GRANT ALL PRIVILEGES ON *.* TO 'ezoom'@'%' WITH GRANT OPTION;"
-	docker exec -it thiago_mysql mysql -u root -p123456  -e "FLUSH PRIVILEGES"
-	docker exec -it thiago_mysql mysql -u root -p123456  -e "SOURCE /home/database/Project.sql"
+	docker exec -it thiago_mysql mysql -u root -p  -e "CREATE USER 'ezoom'@'%' IDENTIFIED BY '123456';GRANT ALL PRIVILEGES ON *.* TO 'ezoom'@'%' WITH GRANT OPTION;FLUSH PRIVILEGES"
+	docker exec -it thiago_mysql mysql -u root -p132456  -e "SOURCE /home/database/Project.sql"
 
 	
 start:

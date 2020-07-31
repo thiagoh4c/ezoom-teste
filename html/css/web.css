@@ -1,0 +1,114 @@
+body {
+  background-color: #f1f1f1;
+  font-family: Arial;
+}
+textarea {
+  resize: none;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5px;
+  min-width: 650px;
+  max-width: 1200px;
+}
+.container a {
+  color: #3965b9;
+  text-decoration: none;
+}
+.panel {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+}
+.panel.right {
+  float: right;
+}
+.success {
+  color: #56950a;
+  border: 1px solid #3a6507;
+}
+.danger {
+  color: #950a0a;
+  border: 1px solid #650707;
+}
+.btnAction {
+  background-color: #3965b9;
+  border-radius: 3px;
+  border: 1px solid #2d5092;
+  color: #FFFFFF !important;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 12px;
+}
+.btnAction .bigButton {
+  font-size: 20px;
+}
+label,
+.form-line,
+input.form-input,
+textarea.form-input {
+  display: inherit;
+  margin: 10px;
+  min-width: 265px;
+}
+textarea.form-input {
+  min-height: 150px;
+}
+.form-line,
+textarea.form-input {
+  display: inherit;
+  margin: 10px;
+}
+.centered {
+  text-align: center;
+  margin: 0 auto;
+}
+.listagem .item {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+.listagem .item div {
+  display: inline-block;
+}
+.listagem .item .div-img {
+  width: 100%;
+  min-width: 110px;
+  text-align: center;
+}
+.listagem .item .div-img img {
+  width: 100%;
+}
+.listagem .item .div-titulo {
+  width: 100%;
+  text-align: left;
+}
+.listagem .item .div-titulo span {
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-top: 20px;
+}
+.exibir .item .div-imagens {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.exibir .item .div-imagens img {
+  width: 90%;
+  padding: 5px;
+}
+.exibir .item .div-descricao {
+  padding: 25px;
+}
+.topoBackground img {
+  width: 100%;
+}
+.tituloCurso {
+  position: relative;
+  top: -24vh;
+  margin: 0 auto;
+  width: 100%;
+  color: white;
+  font-size: 6vw;
+}

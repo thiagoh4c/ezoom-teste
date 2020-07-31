@@ -1,0 +1,50 @@
+page-detalhe-curso {
+	ion-header{
+		.header{
+			@extend .header;
+		}
+		.logoHeader{
+			width:40px;
+			height:40px;
+		}
+
+		
+	}
+	.divHeader{
+		@extend .divHeader;
+		text-align: center;
+		.desc{
+			position: absolute;
+			top: 7vh;
+			width: 100%;
+			padding: 20px;
+			color:#ffffff;
+			text-shadow:1px 1px 1px black;
+			h5{
+				color:#fb5000;    
+				font-size: 5vw;
+				margin-top:0px;
+			}
+			span{
+				font-size:3vw;
+			}
+			a > ion-icon{
+				font-size:10vw;
+				color:white;
+			}
+		}
+	}
+
+	.divContainer{
+		margin: 25px;
+		padding: 10px;
+	}
+
+	ion-content{
+		background-color:#eee;
+	}
+	.notFound{
+		margin-top:45%
+	}
+
+}

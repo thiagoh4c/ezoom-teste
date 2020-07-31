@@ -1,0 +1,68 @@
+@import "geral.less";
+
+
+.listagem{
+	.item{
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		
+		div{
+			display:inline-block;
+		}
+		.div-img{
+			width:100%;
+			min-width:110px;
+			text-align: center;
+
+			img{
+				width:100%;
+			}
+		}
+		.div-titulo{
+			width: 100%;
+			text-align: left;
+			span{
+				font-size: 24px;
+				text-align: center;
+				width: 100%;
+				display: block;
+				margin-top:20px;
+			}
+		}
+	}
+	
+}
+
+.exibir{
+	.item{
+
+		.div-imagens{
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+
+			img{
+				width: 90%;
+				padding: 5px;
+			}
+		}
+
+		.div-descricao{
+		    padding: 25px;
+		}
+	}
+}
+
+.topoBackground{
+	img{
+		width:100%;
+	}
+}
+
+.tituloCurso{
+	position: relative;
+	top: -24vh;
+	margin: 0 auto;
+	width: 100%;
+	color:white;
+	font-size: 6vw;
+}

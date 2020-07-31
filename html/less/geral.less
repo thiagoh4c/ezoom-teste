@@ -1,0 +1,75 @@
+@cor-link: #3965b9;
+@cor-success: #56950a;
+@cor-danger: #950a0a;
+
+body{
+	background-color: #f1f1f1;
+	font-family:Arial;
+}
+
+textarea{
+  resize: none;
+}
+
+.container{
+	width: 80%;
+	margin: 0 auto;
+	padding: 5px;
+	min-width: 650px;
+	max-width: 1200px;
+
+	a{
+		color:@cor-link;
+		text-decoration: none;
+	}
+}
+
+.panel{
+	background-color:#ffffff;
+	border-radius:5px;
+	padding: 5px;
+	&.right{
+		float:right;
+	}
+}
+
+.success{
+	color:@cor-success;
+	border:1px solid darken(@cor-success, 10%);
+}
+.danger{
+	color:@cor-danger;
+	border:1px solid darken(@cor-danger, 10%);
+}
+
+.btnAction{
+	.bigButton{
+		font-size: 20px;
+	}
+	background-color:@cor-link;
+	border-radius:3px; 
+	border:1px solid darken(@cor-link, 10%);
+	color:#FFFFFF !important;
+	padding: 5px;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+label, .form-line, input.form-input{
+    display: inherit;
+    margin: 10px;
+    min-width:265px;
+}
+textarea.form-input{
+	&:extend(.form-line);
+	min-height: 150px;
+}
+.form-line{
+    display: inherit;
+    margin: 10px;
+}
+
+.centered{
+	text-align: center;
+	margin: 0 auto;
+}

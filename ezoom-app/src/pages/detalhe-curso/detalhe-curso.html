@@ -1,0 +1,39 @@
+<ion-header no-border [class.header]="transparent">
+  <ion-navbar hideBackButton mode="ios" >
+  	<ion-buttons start>
+	 <img src="assets/imgs/logo.png" class="logoHeader">
+	</ion-buttons>
+	<ion-buttons end>
+	  <button ion-button color="light"><ion-icon class="btnMenu" name="menu"></ion-icon></button>
+	</ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+	<div *ngIf="!curso" text-center class="notFound">
+		<h2>Não curso encontrado</h2>
+		<a (click)="voltar()">Voltar</a>
+	</div>
+	<div *ngIf="curso">
+		<div class="divHeader">
+		  <img [src]="curso.imagem_principal">
+		  <div class="desc" text-center>
+		  	  <a (click)="voltar()"><ion-icon name="arrow-back"></ion-icon></a>
+			  <h5 class="titulo">{{curso.titulo}}</h5>
+		  </div>
+		</div>
+		<div class="divContainer">
+			<div [innerHTML]="curso.descricao"></div>
+
+			<ion-grid>
+	            <ion-row no-padding>
+	              <ion-col col-6 *ngFor="let imagem of curso.imagens">
+		               <ion-thumbnail item-end>
+					      <img [src]="imagem.imagem">
+					    </ion-thumbnail>
+	              </ion-col>
+	            </ion-row>
+			</ion-grid>
+		</div>
+	</div>
+</ion-content>

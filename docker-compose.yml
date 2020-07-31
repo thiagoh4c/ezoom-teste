@@ -1,0 +1,38 @@
+version: '2'
+services:
+  mysql:
+    container_name: thiago_mysql
+    entrypoint: bash
+    tty: true
+    networks:
+      - backend
+    stdin_open: true
+    image: mysql:5.7
+    build: ./containers/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: pass
+    volumes:
+      - db:/db
+    ports: 
+      - '3306:3306'
+  php:
+    container_name: thiago_apachephp
+    entrypoint: bash
+    tty: true
+    stdin_open: true
+    build: ./containers/apachephp
+    networks:
+      - backend
+    ports:
+      - '80:80'
+      - '8086:8080'
+    volumes:
+      - ./html:/var/www/app
+    depends_on:
+      - mysql
+    links:
+      - mysql:mysql
+volumes:
+  db:
+networks:
+  backend:

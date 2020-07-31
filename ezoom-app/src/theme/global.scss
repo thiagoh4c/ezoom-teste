@@ -1,0 +1,54 @@
+$header-height: 180px;
+$background-md-color: #eee;
+$background-ios-color: #eee;
+$navbar-ios-height: 60px;
+$navbar-md-height: 60px;
+
+.header {
+	.toolbar {
+		padding:20px;
+		position: absolute;
+		min-height:70px;
+		height:70px;
+
+		.toolbar-background {
+			background: transparent;
+		}
+		.toolbar-title {
+			color: black;
+		}
+		.btnMenu{
+			font-size: 40px;
+		}
+	}
+}
+
+.divHeader{
+	min-height: $header-height;
+	 img{
+	 	border-radius: 0px 0px 10px 10px;
+		filter: grayscale(0.8);
+		min-height: $header-height;
+	 }
+
+	 .titulo{
+	 	text-transform: uppercase;
+	 }
+}
+
+.divContainer{
+	background-color: #FFFFFF; 
+	border-radius: 10px;
+	ion-item{
+		&:first-child{
+			border-radius: 10px 10px 0px 0px;
+		}
+		&:last-child{
+			border-radius: 0px 0px 10px 10px;
+		}
+	}
+}
+
+.btnMenu{
+	text-shadow: 1px 1px 1px #000000;
+}

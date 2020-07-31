@@ -1,0 +1,48 @@
+@import "geral.less";
+
+
+.galeria{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	.imgCurso{
+		min-width:80px;
+		height:auto;
+		max-width: 100%;
+		width: 100%;
+		&.principal{
+			border:5px solid @cor-success;
+		}
+	}
+	div{
+		width:100%;
+		max-width: 250px;
+		margin:5px;
+	}
+}
+
+table{
+	.td-acao{
+		min-width:110px;
+		text-align: center;
+	}
+	.td-titulo{
+		width:100%;
+		text-align: left;
+	}
+}
+
+#files{
+	opacity:0;
+	width:0px;
+	height:0px;
+}
+
+.login{
+	top:31%;
+	position: relative;
+	width:300px;
+	margin: 0 auto;
+	h3{
+		text-align: center
+	}
+}

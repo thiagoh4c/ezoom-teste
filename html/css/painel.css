@@ -1,0 +1,106 @@
+body {
+  background-color: #f1f1f1;
+  font-family: Arial;
+}
+textarea {
+  resize: none;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5px;
+  min-width: 650px;
+  max-width: 1200px;
+}
+.container a {
+  color: #3965b9;
+  text-decoration: none;
+}
+.panel {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+}
+.panel.right {
+  float: right;
+}
+.success {
+  color: #56950a;
+  border: 1px solid #3a6507;
+}
+.danger {
+  color: #950a0a;
+  border: 1px solid #650707;
+}
+.btnAction {
+  background-color: #3965b9;
+  border-radius: 3px;
+  border: 1px solid #2d5092;
+  color: #FFFFFF !important;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 12px;
+}
+.btnAction .bigButton {
+  font-size: 20px;
+}
+label,
+.form-line,
+input.form-input,
+textarea.form-input {
+  display: inherit;
+  margin: 10px;
+  min-width: 265px;
+}
+textarea.form-input {
+  min-height: 150px;
+}
+.form-line,
+textarea.form-input {
+  display: inherit;
+  margin: 10px;
+}
+.centered {
+  text-align: center;
+  margin: 0 auto;
+}
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.galeria .imgCurso {
+  min-width: 80px;
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+.galeria .imgCurso.principal {
+  border: 5px solid #56950a;
+}
+.galeria div {
+  width: 100%;
+  max-width: 250px;
+  margin: 5px;
+}
+table .td-acao {
+  min-width: 110px;
+  text-align: center;
+}
+table .td-titulo {
+  width: 100%;
+  text-align: left;
+}
+#files {
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+}
+.login {
+  top: 31%;
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+.login h3 {
+  text-align: center;
+}
